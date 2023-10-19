@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/charmonman_bold"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/titre"
+        android:textColor="@color/bleu"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/ageMsg"
+        android:textColor="@color/gris1"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/sbage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="120"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/question"
+        android:textColor="@color/gris1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+    <RadioButton
+        android:id="@+id/rbtOui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:checked="true"
+        android:text="Oui"
+        android:fontFamily="@font/architects_daughter"
+        android:textColor="@color/bleu"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/rbtNon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="Non"
+        android:fontFamily="@font/architects_daughter"
+        android:textColor="@color/bleu"
+        android:textSize="20sp" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:hint="(en mmol/l)"
+        android:fontFamily="@font/architects_daughter"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="consulter"
+        android:fontFamily="@font/charmonman_bold"
+        android:textColor="@color/bleu"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:background="@color/gris2"
+        android:onClick="Calculer"/>
+
+</LinearLayout>
