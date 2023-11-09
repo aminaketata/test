@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private EditText etValeur;
     private Button bConsulter;
-    private TextView tvAge,tvRésultat;
+    private TextView tvAge,tvRésultat ;
     private RadioButton rbOui,rbNon;
     private SeekBar sbAge;
 
