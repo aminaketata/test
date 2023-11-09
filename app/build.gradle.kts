@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.ketata_amina_tp2_personnaliser"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.ketata_amina_tp2_personnaliser"
